@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "keywords": "translation, german, english",
-  "license": "",
+  "private": true,
   "author": "Emily Wachelka",
   "scripts": {
-    "start": "node_modules/.bin/http-server ./public -g --port 8080"
+    "start": "node_modules/.bin/http-server docs -g --port 8080"
   },
   "devDependencies": {
     "http-server": "^14.1.0"

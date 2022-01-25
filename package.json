@@ -1,0 +1,14 @@
+{
+  "name": "@wachelka/english-by-emily",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": "translation, german, english",
+  "license": "",
+  "author": "Emily Wachelka",
+  "scripts": {
+    "start": "node_modules/.bin/http-server ./public -g --port 8080"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}

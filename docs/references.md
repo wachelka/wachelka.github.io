@@ -1,4 +1,5 @@
 ---
 layout: default
 ---
-<h1>References</h1>
+
+# References

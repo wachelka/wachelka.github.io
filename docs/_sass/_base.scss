@@ -1,6 +1,137 @@
+$primary: #0d5;
+$grey: #999;
+
 /* GLOBAL */
 * {
   box-sizing: border-box;
+}
+
+/* IMAGES */
+
+.image {
+  display: block;
+  height: 328px;
+  background-size: 100%;
+}
+
+.image.typewriter {
+  background-image: url('/assets/imgs/typewriter.jpg');
+  background-position: 0 -16px;
+}
+
+/* BUTTON */
+
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #00dd55;
+  border: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover {
+    background-color: rgba(0, 221, 85, 0.84);
+    color: #fff;
+  }
+}
+
+/* FORM */
+
+.form {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    > li {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      width: 200px;
+
+      &:first-child {
+        width: 100%;
+        padding-bottom: 4px;
+        font-size: 0.85em;
+        color: #999;
+      }
+    }
+  }
+
+  label {
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+
+    > span {
+      display: block;
+      padding-bottom: 4px;
+      font-size: 0.85em;
+      color: $grey;
+    }
+  }
+
+  &__footer {
+    margin-top: 16px;
+    text-align: right;
+  }
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+select, input, textarea {
+  padding: 8px;
+  border: 1px solid $grey;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #0d5;
+  }
+}
+
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    display:none;
+
+    & + label {
+      display: flex;
+      align-items: center;
+
+      color: $grey;
+      cursor: pointer;
+      line-height: 20px;
+
+      &:before {
+        text-align: center;
+        color: #fff;
+        content: '✓';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $grey;
+        float: left;
+        margin-right: 8px;
+      }
+    }
+
+    &:checked + label {
+      &:before {
+        color: $grey;
+      }
+    }
 }
 
 main {
@@ -11,17 +142,6 @@ main {
 main > section {
   max-width: 594px;
   float: left;
-}
-
-article .image {
-  display: block;
-  height: 328px;
-  background-size: 100%;
-}
-
-article .image.typewriter {
-  background-image: url('/assets/imgs/typewriter.jpg');
-  background-position: 0 -16px;
 }
 
 main > aside {
@@ -49,21 +169,6 @@ main > aside img {
   float: right;
   border-radius: 8px;
   margin-left: 8px;
-}
-
-button {
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
-  background-color: #00dd55;
-  border: none;
-  padding: 8px 16px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-button:hover {
-  background-color: rgba(0, 221, 85, 0.84);
 }
 
 body {
@@ -106,7 +211,7 @@ nav {
 }
 
 nav a {
-  color: #999;
+  color: $grey;
   text-transform: uppercase;
 }
 
@@ -115,7 +220,7 @@ nav a {
 main {
   padding: 124px 10px 10px 10px;
 }
-
+h
 #contact {
   margin-left: 16px;
 }
@@ -172,4 +277,3 @@ main {
   }
 
 }
-

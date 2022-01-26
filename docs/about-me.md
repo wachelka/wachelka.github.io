@@ -1,4 +1,7 @@
 ---
 layout: default
 ---
-<h1>About me</h1>
+
+# About me
+
+About me text...

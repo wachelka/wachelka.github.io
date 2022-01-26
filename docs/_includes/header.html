@@ -1,4 +1,9 @@
-{% assign pageData = site.data.pages[page.url] %}
+{% if page.url contains "/blog/"  %}
+  {% assign url = '/blog/' %}
+{% else %}
+  {% assign url = page.url %}
+{% endif %}
+{% assign pageData = site.data.pages[url] %}
 <header>
   <div class="container">
     <div class="left">
@@ -7,10 +12,13 @@
       </a>
     </div>
     <div class="right">
-      <button id="contact">
-        {% if pageData.lang == 'en' %}contact{% else %}Kontakt{% endif %}
-      </button>
+      {% if pageData.lang == 'en' %}
+      <a class="button" href="/contact">Contact</a>
+      {% else %}
+      <a class="button" href="/contact">Kontakt</a>
+      {% endif %}
     </div>
+    {% if pageData.translationUrl %}
     <ul class="languages">
       {% if pageData.lang == 'en' %}
         <li class="active">English</li>
@@ -22,6 +30,7 @@
         <li class="active">Deutsch</li>
       {% endif %}
     </ul>
+    {% endif %}
   </div>
   <nav role="navigation" id="menuToggle">
     <input type="checkbox" />
@@ -31,7 +40,7 @@
     <ul id="menu">
       {% for item in site.data.pages %} {% if item[1].lang == pageData.lang and
       item[1].menu %}
-      <li{% if item[0] == page.url %} class="active"{% endif %}><a href="{{ item[0] | remove: '.html' }}">{{item[1].menu}}</a></li>
+      <li{% if item[0] == url %} class="active"{% endif %}><a href="{{ item[0] | remove: '.html' }}">{{item[1].menu}}</a></li>
       {% endif %} {% endfor %}
     </ul>
   </nav>

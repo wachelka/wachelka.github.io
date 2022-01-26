@@ -6,9 +6,9 @@
   "private": true,
   "author": "Emily Wachelka",
   "scripts": {
-    "start": "node_modules/.bin/http-server docs -g --port 8080"
+    "watch": "jekyll serve --source ./docs -l -d ./docs/_site --drafts"
   },
   "devDependencies": {
-    "http-server": "^14.1.0"
+    "prettier": "^2.5.1"
   }
 }

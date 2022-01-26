@@ -45,6 +45,11 @@
     "translationUrl": "/english-content"
   },
 
+  "/blog/": {
+    "lang": "en",
+    "menu": "Blog"
+  },
+
   "/references.html": {
     "lang": "en",
     "menu": "References",
@@ -99,5 +104,14 @@
     "lang": "de",
     "footer": "Datenschutz",
     "translationUrl": "/imprint#terms-and-conditions"
+  },
+
+  "/contact.html": {
+    "lang": "en",
+    "translationUrl": "/kontakt"
+  },
+  "/kontakt.html": {
+    "lang": "de",
+    "translationUrl": "/contact"
   }
 }

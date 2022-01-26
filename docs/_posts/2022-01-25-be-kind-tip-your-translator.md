@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Be kind, tip your translator
 permalink: /blog/:year/:title
+tags: fun marketing
 ---
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.

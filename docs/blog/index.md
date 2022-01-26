@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<h1>This is my blog</h1>
-<p>This is my blog intro bla bla</p>
+
+# This is my blog
+
+This is my blog intro bla bla
 
 {% for post in site.posts %}
 <article>

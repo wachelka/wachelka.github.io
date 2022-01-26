@@ -1,0 +1,36 @@
+<form class="form" onSubmit="return false" method="POST">
+  <label>
+    <span>Name</span>
+    <input type="text" name="name" placeholder="">
+  </label>
+  <label>
+    <span>Email</span>
+    <input type="text" name="email" placeholder="me@example.com">
+  </label>
+  <ul>
+    <li>Subject</li>
+    <li>
+      <input type="checkbox" id="translation" name="translation" />
+      <label for="translation">Translation</label>
+    </li>
+    <li>
+      <input type="checkbox" id="proofreading" name="proofreading" />
+      <label for="proofreading">Proofreading / Editing</label>
+    </li>
+    <li>
+      <input type="checkbox" id="content" name="content" />
+      <label for="content">Content</label>
+    </li>
+    <li>
+      <input type="checkbox" id="other" name="other" />
+      <label for="other">Other</label>
+    </li>
+  </ul>
+  <label>
+    <span>Message</span>
+    <textarea></textarea>
+  </label>
+  <div class="form__footer">
+    <a href="#" class="button">Send email</a>
+  </div>
+</form>

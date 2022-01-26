@@ -1,0 +1,9 @@
+{% assign lang = site.data.pages[page.url].lang | default: 'en' %}
+<footer>
+  <ul class="links">
+    {% for item in site.data.pages %} {% if item[1].lang == lang and
+    item[1].footer %}
+    <li><a href="{{item[1].url}}">{{item[1].footer}}</a></li>
+    {% endif %} {% endfor %}
+  </ul>
+</footer>

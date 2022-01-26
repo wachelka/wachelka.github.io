@@ -1,0 +1,19 @@
+---
+permalink: /blog/:year/:title
+---
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+  {% include head.html %}
+<body>
+  {% include header.html %}
+  <main>
+    <section>{{ content }}</section>
+    <aside>
+    </aside>
+    <div style="clear: both"></div>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>

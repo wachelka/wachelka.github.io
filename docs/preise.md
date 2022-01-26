@@ -1,4 +1,5 @@
 ---
 layout: default
 ---
-<h1>Impressum</h1>
+
+# Preise

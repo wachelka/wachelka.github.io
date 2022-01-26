@@ -1,0 +1,103 @@
+{
+  "/": {
+    "key": "home",
+    "lang": "en",
+    "url": "/",
+    "translationUrl": "/deutsch"
+  },
+  "/deutsch.html": {
+    "key": "home",
+    "lang": "de",
+    "url": "/deutsch",
+    "translationUrl": "/"
+  },
+
+  "/german-english-translation.html": {
+    "lang": "en",
+    "menu": "Translation",
+    "translationUrl": "/deutsch-englisch-uebersetzung"
+  },
+  "/deutsch-englisch-uebersetzung.html": {
+    "lang": "de",
+    "menu": "Übersetzung",
+    "translationUrl": "/german-english-translation"
+  },
+
+  "/english-proofreading-editing.html": {
+    "lang": "en",
+    "menu": "Proofreading/Editing",
+    "translationUrl": "/englisch-korrektorat-lektorat"
+  },
+  "/englisch-korrektorat-lektorat.html": {
+    "lang": "de",
+    "menu": "Korrektorat/Lektorat",
+    "translationUrl": "/english-proofreading-editing"
+  },
+
+  "/english-content.html": {
+    "lang": "en",
+    "menu": "Content",
+    "translationUrl": "/content-auf-englisch"
+  },
+  "/content-auf-englisch.html": {
+    "lang": "de",
+    "menu": "Content",
+    "translationUrl": "/english-content"
+  },
+
+  "/references.html": {
+    "lang": "en",
+    "menu": "References",
+    "translationUrl": "/referenzen"
+  },
+  "/referenzen.html": {
+    "lang": "de",
+    "menu": "Referenzen",
+    "translationUrl": "/references"
+  },
+
+  "/pricing.html": {
+    "lang": "en",
+    "menu": "Pricing",
+    "translationUrl": "/preise"
+  },
+  "/preise.html": {
+    "lang": "de",
+    "menu": "Preise",
+    "translationUrl": "/pricing"
+  },
+
+  "/about-me.html": {
+    "lang": "en",
+    "menu": "About me",
+    "translationUrl": "/ueber-mich"
+  },
+  "/ueber-mich.html": {
+    "lang": "de",
+    "menu": "Über mich",
+    "translationUrl": "/about-me"
+  },
+
+
+  "/imprint.html": {
+    "lang": "en",
+    "footer": "Imprint",
+    "translationUrl": "/impressum"
+  },
+  "/impressum.html": {
+    "lang": "de",
+    "footer": "Impressum",
+    "translationUrl": "/imprint"
+  },
+
+  "/imprint.html#terms-and-conditions": {
+    "lang": "en",
+    "footer": "Terms & Conditions",
+    "translationUrl": "/impressum#datenschutz"
+  },
+  "/impressum.html#datenschutz": {
+    "lang": "de",
+    "footer": "Datenschutz",
+    "translationUrl": "/imprint#terms-and-conditions"
+  }
+}

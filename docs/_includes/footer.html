@@ -1,0 +1,9 @@
+{% assign pageData = site.data.pages[page.url] %}
+<footer>
+  <ul class="links">
+    {% for item in site.data.pages %} {% if item[1].lang == pageData.lang and
+    item[1].footer %}
+    <li><a href="{{item[1].url}}">{{item[1].footer}}</a></li>
+    {% endif %} {% endfor %}
+  </ul>
+</footer>

@@ -1,0 +1,175 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+main > section {
+  max-width: 594px;
+  float: left;
+}
+
+article .image {
+  display: block;
+  height: 328px;
+  background-size: 100%;
+}
+
+article .image.typewriter {
+  background-image: url('/assets/imgs/typewriter.jpg');
+  background-position: 0 -16px;
+}
+
+main > aside {
+  max-width: 314px;
+  float: right;
+  margin-left: 32px;
+}
+
+main > aside > article {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  background-color: rgba(176, 255, 206, 0.2);
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main > aside > article > h3 {
+  margin-top: 0;
+}
+
+main > aside img {
+  max-width: 100px;
+  float: right;
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #00dd55;
+  border: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgba(0, 221, 85, 0.84);
+}
+
+body {
+  color: #333;
+  font-family: "Roboto";
+}
+
+a {
+  color: #0d5;
+  font-family: "Roboto Mono";
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul.links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+}
+
+ul.links > li {
+  display: inline-block;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* NAVIGATION */
+nav {
+  clear: both;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+}
+
+nav a {
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+
+main {
+  padding: 124px 10px 10px 10px;
+}
+
+#contact {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 960px) {
+  main > section {
+    float: none;
+    max-width: 100%;
+  }
+
+  main > aside {
+    float: none;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  article .image {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  header .logo {
+    margin-left: 48px;
+    height: 32px;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  article .image {
+    height: 196px;
+  }
+
+  main {
+    padding-top: 64px;
+  }
+
+  #contact {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  }
+
+}
+

@@ -1,0 +1,38 @@
+{% assign pageData = site.data.pages[page.url] %}
+<header>
+  <div class="container">
+    <div class="left">
+      <a href="/{% if pageData.lang == 'de' %}deutsch{% endif %}" class="logo">
+        <img alt="English by Emily" src="/assets/imgs/logo.jpg" />
+      </a>
+    </div>
+    <div class="right">
+      <button id="contact">
+        {% if pageData.lang == 'en' %}contact{% else %}Kontakt{% endif %}
+      </button>
+    </div>
+    <ul class="languages">
+      {% if pageData.lang == 'en' %}
+        <li class="active">English</li>
+        <li>&rarr;</li>
+        <li><a href="{{pageData.translationUrl}}">Deutsch</a></li>
+      {% else %}
+        <li><a href="{{pageData.translationUrl}}">English</a></li>
+        <li>&larr;</li>
+        <li class="active">Deutsch</li>
+      {% endif %}
+    </ul>
+  </div>
+  <nav role="navigation" id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      {% for item in site.data.pages %} {% if item[1].lang == pageData.lang and
+      item[1].menu %}
+      <li{% if item[0] == page.url %} class="active"{% endif %}><a href="{{ item[0] | remove: '.html' }}">{{item[1].menu}}</a></li>
+      {% endif %} {% endfor %}
+    </ul>
+  </nav>
+</header>

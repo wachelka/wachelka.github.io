@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <section>{{ content }}</section>
+
+      <aside>
+        <article class="about">
+          <h3>Emily Wachelka</h3>
+          <img src="/assets/imgs/emily.jpg" />
+          <p>
+            A native US American, I have been living in Germany for over 13
+            years. I have a passion for language and writing.
+          </p>
+          <a href="/about-me">About me</a>
+        </article>
+
+        <article class="references">
+          <h3>References</h3>
+          <figure></figure>
+        </article>
+      </aside>
+      <div style="clear: both"></div>
+    </main>
+
+    <hr />
+
+    {% include footer.html %}
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <!--<script src="https://www.google-analytics.com/analytics.js" async></script>-->
+  </body>
+</html>

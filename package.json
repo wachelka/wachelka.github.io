@@ -6,7 +6,7 @@
   "private": true,
   "author": "Emily Wachelka",
   "scripts": {
-    "watch": "jekyll serve --source ./docs -l -d ./docs/_site --drafts"
+    "watch": "jekyll serve --trace --source ./docs -d ./docs/_site --drafts"
   },
   "devDependencies": {
     "prettier": "^2.5.1"
